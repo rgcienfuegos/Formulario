@@ -1,0 +1,201 @@
+<!doctype html>
+<html lang="es">
+
+<head>
+  <!-- Required meta tags -->
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+  <!--  Custom styles for this template -->
+  <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css"
+  integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous" />
+  <link href="./css/style.css" rel="stylesheet">
+  <title>Formulario</title>
+</head>
+
+<body>
+  <div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Queremos tu opinión de Salva a los Minions</h1>
+      <p id="description" class="description text-center">
+       Gracias por ayudarme a mejorar el juego
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Nombre</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Introduce tu nombre"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Introduce tu Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Edad<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Edad"
+        />
+      </div>
+      <div class="form-group">
+        <p>Que opción te define mejor?</p>
+        <select id="dropdown" name="role" class="form-control" required>
+          <option disabled selected value>Selecciona una opción</option>
+          <option value="student">Estudiante</option>
+          <option value="job">Trabajador</option>
+          <option value="learner">Ojeador</option>
+          <option value="preferNo">Prefiero no decir</option>
+          <option value="other">Otro</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>¿ Recomendarias el juego a un amigo ?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="Absolutamente"
+            type="radio"
+            class="input-radio"
+            checked
+          />Absolutamente</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="notbad"
+            type="radio"
+            class="input-radio"
+          />No está mal</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="meh"
+            type="radio"
+            class="input-radio"
+          />Meh</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+         Que es lo que más te ha gustado?
+        </p>
+        <select id="most-like" name="mostLike" class="form-control" required>
+          <option disabled selected value>Elige una opción</option>
+          <option value="minions">Los minions :D</option>
+          <option value="mecanica">La mecánica</option>
+          <option value="estetica">La estética</option>
+         
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+         Que te gustaría mejorar?
+          <span class="clue">(Selecciona todas las opciones que quieras)</span>
+        </p>
+  
+        <label
+          ><input
+            name="prefer"
+            value="dificultad"
+            type="checkbox"
+            class="input-checkbox"
+          />Dificultad</label
+        >
+        <label>
+          <input
+            name="prefer"
+            value="movimiento"
+            type="checkbox"
+            class="input-checkbox"
+          />Movimiento personajes</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="moviles"
+            type="checkbox"
+            class="input-checkbox"
+          />Diseño para moviles y tablets</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="diseño"
+            type="checkbox"
+            class="input-checkbox"
+          />Diseño en general</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="Controles"
+            type="checkbox"
+            class="input-checkbox"
+          />Controles</label
+        >
+        <label
+          ><input
+            name="prefer"
+            value="notgood"
+            type="checkbox"
+            class="input-checkbox"
+          />En mi móvil no se ve bien</label
+        >
+        <label
+        ><input
+          name="prefer"
+          value="other"
+          type="checkbox"
+          class="input-checkbox"
+        />Otros</label
+      >
+    
+      </div>
+  
+      <div class="form-group">
+        <p>Algún comentario o sugerencia?</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Introduce tu comentario aquí..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Enviar
+        </button>
+      </div>
+    </form>
+  </div>
+  
+
+
+</body>
